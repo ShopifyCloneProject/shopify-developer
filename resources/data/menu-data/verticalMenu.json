@@ -1,0 +1,387 @@
+{
+  "menu": [
+    {
+      "url": "admin/dashboard",
+      "name": "Home",
+      "icon": "home",
+      "slug": ["admin.dashboard"],
+      "classlist": "dashboard_main"
+    },
+    {
+      "name": "Orders",
+      "badge": "3",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "target",
+      "slug": [""],
+      "classlist": "orders_main",
+      "submenu": [
+        {
+          "url": "admin/orders",
+          "name": "AllOrders",
+          "icon": "download",
+          "slug": ["admin.orders.index","admin.orders.create","admin.orders.edit"],
+          "permission_access": "order_access"
+        },
+        {
+          "url": "admin/orders",
+          "name": "Draft",
+          "icon": "download",
+          "slug": ["admin.draft.index","admin.draft.create","admin.draft.edit"],
+          "permission_access": "draft_access"
+        },
+        {
+          "url": "admin/shippingproducts",
+          "name": "ShippingProducts",
+          "icon": "briefcase",
+          "slug": ["admin.shippingproducts.index","admin.shippingproducts.create","admin.shippingproducts.edit"],
+          "permission_access": "shipping_product_access"
+        },
+        {
+          "url": "admin/exchangeorders",
+          "name": "ExchangeOrders",
+          "icon": "repeat",
+          "slug": ["admin.exchangeorders.index","admin.exchangeorders.create","admin.exchangeorders.edit"],
+          "permission_access": "exchangeorders_access"
+        },
+        {
+          "url": "admin/returnorders",
+          "name": "ReturnOrders",
+          "icon": "corner-up-left",
+          "slug": ["admin.returnorders.index","admin.returnorders.create","admin.returnorders.edit"],
+          "permission_access": "returnorders_access"
+        },
+        {
+          "url": "admin/returnshippingproducts",
+          "name": "ReturnShippingProducts",
+          "icon": "briefcase",
+          "slug": ["admin.returnshippingproducts.index","admin.returnshippingproducts.create","admin.returnshippingproducts.edit"],
+          "permission_access": "return_shipping_product_access"
+        },
+        {
+          "url": "admin/abandonecheckouts",
+          "name": "AbandonedCarts",
+          "icon": "check-square",
+          "slug": ["admin.abandonecheckouts.index","admin.abandonecheckouts.create","admin.abandonecheckouts.edit"],
+          "permission_access": "abandone_checkout_access"
+        },
+        {
+          "url": "admin/cart",
+          "name": "CustomOrders",
+          "icon": "shopping-cart",
+          "slug": ["admin.cart.index","admin.cart.create","admin.cart.edit"],
+          "permission_access": "add_cart_access"
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "badge": "5",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "package",
+      "slug": [""],
+      "classlist": "products_main",
+      "submenu": [
+        {
+          "url": "admin/products",
+          "name": "AllProducts",
+          "icon": "tag",
+          "slug": ["admin.products.index","admin.products.create","admin.products.edit"],
+          "permission_access": "product_access"
+        },
+        {
+          "url": "admin/collections",
+          "name": "Collections",
+          "icon": "briefcase",
+          "slug": ["admin.collections.index","admin.collections.create","admin.collections.edit"],
+          "permission_access": "collection_access"
+        },
+        {
+            "url": "admin/product-types",
+            "name": "ProductTypes",
+            "icon": "slack",
+            "slug": ["admin.product-types.index","admin.product-types.create","admin.product-types.edit"],
+            "permission_access": "product_type_access"
+          },
+          {
+            "url": "admin/tags",
+            "name": "Tags",
+            "icon": "tag",
+            "slug": ["admin.tags.index","admin.tags.create","admin.tags.edit"],
+            "permission_access": "tag_access"
+        },
+        {
+          "url": "admin/products",
+          "name": "Inventory",
+          "icon": "external-link",
+          "slug": ["admin.transfer.index","admin.transfer.create","admin.transfer.edit"],
+          "permission_access": "transfer_stock_access"
+        }
+      ]
+    },
+    {
+          "url": "admin/discounts",
+          "name": "Discounts",
+          "icon": "gift",
+          "slug": ["admin.discounts.index","admin.discounts.create","admin.discounts.edit"],
+          "classlist": "discounts_main",
+          "permission_access": "discounts_access"
+    },
+    {
+      "url": "admin/customers",
+      "name": "Customers",
+      "icon": "users",
+      "slug": ["admin.customers.index"],
+      "classlist": "customers_main"
+    },    
+    {
+      "name": "Appearance",
+      "badge": "3",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "menu",
+      "slug": [""],
+      "classlist": "theme_main",
+      "submenu": [
+        {
+          "url": "admin/selectedtheme",
+          "name": "Themeselection",
+          "icon": "box",
+          "slug": ["admin.selectedtheme"],
+          "permission_access": "select_theme_access"
+        },
+        {
+          "name": "Pages",
+          "icon": "file-text",
+          "slug": ["admin.menu-level.index"],
+          "permission_access": "theme_page_accesss",
+          "classlist": "",
+          "submenu": [
+            {
+              "url": "admin/page/home",
+              "name": "Home",
+              "icon": "home",
+              "slug": ["admin.homepage","admin.home.create","admin.home.edit"],
+              "permission_access": "theme_home_page_accesss"
+            },
+            {
+              "url": "admin/page/productdetail",
+              "name": "ProductDetail",
+              "icon": "book",
+              "slug": ["admin.productdetail","admin.product-detail.create","admin.product-detail.edit"],
+              "permission_access": "theme_product_detail_page_accesss"
+            }
+          ]
+        },
+        {
+          "url": "admin/page/menu",
+          "name": "Menus",
+          "icon": "menu",
+          "slug": ["admin.menu"],
+          "permission_access": "theme_menu_accesss"
+        },
+        {
+          "url": "admin/themesettings",
+          "name": "Themesetting",
+          "icon": "compass",
+          "icon": "menu",
+          "slug": ["admin.themesettings"],
+          "permission_access": "theme_settings_access"
+        }
+      ]
+    },
+    {
+      "name": "MasterSettings",
+      "badge": "2",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "sun",
+      "slug": [""],
+      "classlist": "generalsetting_main",
+      "submenu": [
+          {
+            "url": "admin/permissions",
+            "name": "Permissions",
+            "icon": "key",
+            "slug": ["admin.permissions.index","admin.permissions.create","admin.permissions.edit"],
+            "permission_access": "permission_access"
+          },
+          {
+            "url": "admin/roles",
+            "name": "Roles",
+            "icon": "user-check",
+            "slug": ["admin.roles.index","admin.roles.create","admin.roles.edit"],
+            "permission_access": "role_access"
+          },
+          {
+            "url": "admin/time-zones",
+            "name": "TimeZones",
+            "icon": "clock",
+            "slug": ["admin.time-zones.index","admin.time-zones.create","admin.time-zones.edit"],
+            "permission_access": "time_zone_access"
+          },
+          {
+            "url": "admin/countries",
+            "name": "Country",
+            "icon": "globe",
+            "slug": ["admin.countries.index","admin.countries.create","admin.countries.edit"],
+            "permission_access": "country_access"
+          },
+          {
+            "url": "admin/states",
+            "name": "States",
+            "icon": "map",
+            "slug": ["admin.states.index","admin.states.create","admin.states.edit"],
+            "permission_access": "state_access"
+
+          },
+          {
+            "url": "admin/weightmanages",
+            "name": "WeightManage",
+            "icon": "database",
+            "slug": ["admin.weightmanages.index","admin.weightmanages.create","admin.weightmanages.edit"],
+            "permission_access": "weightmanage_access"
+          },
+          {
+            "url": "admin/dimensions",
+            "name": "Dimensions",
+            "icon": "sliders",
+            "slug": ["admin.dimensions.index","admin.dimensions.create","admin.dimensions.edit"],
+            "permission_access": "dimensions_access"
+          },
+          {
+            "url": "admin/payment-methods",
+            "name": "PaymentMethods",
+            "icon": "dollar-sign",
+            "slug": ["admin.payment-methods.index","admin.payment-methods.create","admin.payment-methods.edit"],
+            "permission_access": "payment_method_access"
+          },
+          {
+            "url": "admin/payment-types",
+            "name": "PaymentTypes",
+            "icon": "credit-card",
+            "slug": ["admin.payment-types.index","admin.payment-types.create","admin.payment-types.edit"],
+            "permission_access": "payment_type_access"
+          },
+          {
+            "url": "admin/currencies",
+            "name": "Currency",
+            "icon": "dollar-sign",
+            "slug": ["admin.currencies.index","admin.currencies.create","admin.currencies.edit"],
+            "permission_access": "currency_access"
+
+          },
+          {
+            "url": "admin/shipping-methods",
+            "name": "ShippingMethods",
+            "icon": "truck",
+            "slug": ["admin.shipping-methods.index","admin.shipping-methods.create","admin.shipping-methods.edit"],
+            "permission_access": "shipping_method_access"
+
+          },
+          {
+            "url": "admin/themes",
+            "name": "Themes",
+            "icon": "aperture",
+            "slug": ["admin.themes.index","admin.themes.create","admin.themes.edit"],
+            "permission_access": "theme_access"
+          },
+          {
+            "url": "admin/languages",
+            "name": "Languages",
+            "icon": "life-buoy",
+            "slug": ["admin.languages.index","admin.languages.create","admin.languages.edit"],
+            "permission_access": "languages_access"
+
+          },
+          {
+            "url": "admin/notifications",
+            "name": "Notifications",
+            "icon": "bell",
+            "slug": ["admin.notifications.index","admin.notifications.create","admin.notifications.edit"],
+            "permission_access": "notification_settings_access"
+          },
+          {
+            "url": "admin/user-store-industries",
+            "name": "UserStoreIndustries",
+            "icon": "cloud",
+            "slug": ["admin.user-store-industries.index","admin.user-store-industries.create","admin.user-store-industries.edit"],
+            "permission_access": "user_store_industry_access"
+          },
+          {
+            "url": "admin/couriers",
+            "name": "Couriers",
+            "icon": "gift",
+            "slug": ["admin.couriers.index","admin.couriers.create","admin.couriers.edit"],
+            "permission_access": "couriers_access"
+          },
+          {
+            "url": "admin/trackings",
+            "name": "Tracking",
+            "icon": "map-pin",
+            "slug": ["admin.trackings.index","admin.trackings.create","admin.trackings.edit"],
+            "permission_access": "tracking_access"
+          },
+          {
+            "url": "admin/shipments",
+            "name": "ShipmentStatus",
+            "icon": "inbox",
+            "slug": ["admin.shipments.index","admin.shipments.create","admin.shipments.edit"],
+            "permission_access": "shipment_status_access"
+          },
+          {
+            "url": "admin/shiporders",
+            "name": "ShipOrders",
+            "icon": "shopping-bag",
+            "slug": ["admin.shiporders.index","admin.shiporders.create","admin.shiporders.edit"],
+            "permission_access": "ship_orders_access"
+          }
+      ]
+    },
+    {
+      "name": "AdminSettings",
+      "badge": "2",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "align-left",
+      "slug": [""],
+      "classlist": "others_main",
+      "submenu": [
+          {
+            "url": "admin/vendors",
+            "name": "Vendors",
+            "icon": "users",
+            "slug": ["admin.vendors.index","admin.vendors.create","admin.vendors.edit"],
+            "permission_access": "vendor_access"
+          },
+          {
+            "url": "admin/variant-types",
+            "name": "variants",
+            "icon": "disc",
+            "slug": ["admin.variant-types.index","admin.variant-types.create","admin.variant-types.edit"],
+            "permission_access": "variant_types_access"
+          },
+          {
+            "url": "admin/variant-options",
+            "name": "VariantOptions",
+            "icon": "crosshair",
+            "slug": ["admin.variant-options.index","admin.variant-options.create","admin.variant-options.edit"],
+            "permission_access": "product_variant_access"
+          },
+          {
+            "url": "admin/variant-media",
+            "name": "VariantMedia",
+            "icon": "film",
+            "slug": ["admin.variant-media.index","admin.variant-media.create","admin.variant-media.edit"],
+            "permission_access": "variant_medium_access"
+          }
+      ]
+    },
+    {
+      "url": "admin/settings",
+      "name": "Settings",
+      "icon": "settings",
+      "slug": ["admin.settings.index","admin.settings.general","admin.settings.locations","admin.settings.locations.create","admin.settings.locations.edit","admin.settings.plan","admin.settings.payments","admin.settings.payments.alternate.providers","admin.settings.payments.alternate.providers.id","admin.settings.notificationdetails","admin.settings.notificationdetailstemplate","admin.settings.notificationdetails","admin.settings.selectlanguage","admin.settings.shipping","admin.settings.shipping.local_delivery","admin.settings.shipping.local_pickup","admin.settings.shipping.rates.manage","admin.settings.rates.create","admin.settings.files","admin.settings.billing","admin.settings.taxes","admin.settings.channel","admin.settings.legal","admin.settings.fbpixel","admin.settings.xmlfeed.index","admin.settings.xmlfeed.create","admin.settings.xmlfeed.edit","admin.settings.default-xml-section","admin.settings.custom","admin.settings.domainurl","admin.settings.adminsettings"],
+      "classlist": "settings_main"
+    }    
+  ]
+}
+
+
+

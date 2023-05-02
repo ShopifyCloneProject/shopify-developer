@@ -1,0 +1,69 @@
+<template>
+   <div>
+      <div class="row">
+         <div class="col-12">
+            <div class="card">
+               <div class="card-header">
+                  <h4 class="card-title">Footer</h4>
+                  <div class="heading-elements">
+                     <ul class="list-inline mb-0">
+                        <!-- <li class="movesection" @mouseover="setDraggable(true)" @mouseleave="setDraggable(false)"><a><i data-feather="move"></i></a></li> -->
+                        <li>
+                           <a data-action="collapse" class="rotate"><i data-feather="chevron-down"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="card-content collapse">
+                  <div class="card-body">
+                     <div class="row" id="footerData">
+                        <div class="col-sm-12">
+                           <div class="custom-control custom-control-primary custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="footerDisplay" v-model="list.status"/>
+                              <label class="custom-control-label" for="footerDisplay">Is Visible</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</template>
+<script>
+   export default {
+     props: ['list'],
+     name:'headersection',
+     data() {
+        return {
+        
+        }
+     },
+     components: {
+     },
+     created() {
+     },
+     mounted() {
+      
+     },
+     methods: {
+        setDraggable(status){
+          this.$emit('setDraggable', status);
+        },
+        endDrag()
+        {
+           feather.replace();
+           this.setWithParent();
+        },
+        setDraggableMenu(status){
+          this.dragdisabled = status;
+        },
+     },
+     computed: {
+     },
+   }
+</script>
+<style lang="scss" scoped>
+
+</style>

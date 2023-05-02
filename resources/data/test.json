@@ -1,0 +1,70 @@
+{
+  "status_code": 200,
+  "data": {
+    "1369010033902": {
+      "message": "success",
+      "awb_no": "1369010033902",
+      "logistic": "Delhivery",
+      "order_type": "forward",
+      "cancel_status": "Approved",
+      "current_status": "In Transit",
+      "current_status_code": "UD",
+      "ofd_count": "0",
+      "return_tracking_no": "",
+      "expected_delivery_date": "2017-06-07",
+      "promise_delivery_date": "2017-06-07",
+      "last_scan_details": {
+        "status": "In Transit",
+        "status_code": "UD",
+        "status_date_time": "2017-06-07 18:11:26",
+        "scan_location": "Surat_Pandesra_Gateway (Gujarat)",
+        "remark": "Shipment Picked Up from Client Location"
+      },
+      "order_details": {
+        "order_type": "COD",
+        "order_number": "11812",
+        "sub_order_number": "11812",
+        "order_sub_order_number": "11812-11812",
+        "phy_weight": "200.00",
+        "net_payment": "775.00",
+        "ship_length": "10.00",
+        "ship_width": "10.00",
+        "ship_height": "10.00"
+      },
+      "order_date_time": {
+        "manifest_date_time": "2017-06-07 13:34:36",
+        "pickup_date": "2017-06-07",
+        "delivery_date": "",
+        "rto_delivered_date": ""
+      },
+      "customer_details": {
+        "customer_name": "John Doe",
+        "customer_address1": "60/40 st shenoy nagar",
+        "customer_address2": "",
+        "customer_address3": "",
+        "customer_city": "Chennai",
+        "customer_state": "Tamil Nadu",
+        "customer_country": "India",
+        "customer_pincode": "600030",
+        "customer_mobile": "9876543210",
+        "customer_phone": "2156789098"
+      },
+      "scan_details": [
+        {
+          "status": "Manifested",
+          "status_code": "UD",
+          "scan_location": "HQ (Haryana)",
+          "remark": "Consignment Manifested",
+          "scan_date_time": "2017-06-07 14:05:57"
+        },
+        {
+          "status": "In Transit",
+          "status_code": "UD",
+          "scan_location": "Surat_Pandesra_Gateway (Gujarat)",
+          "remark": "Shipment Picked Up from Client Location",
+          "scan_date_time": "2017-06-07 18:11:26"
+        }
+      ]
+    }
+  }
+}

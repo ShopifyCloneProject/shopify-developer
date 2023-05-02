@@ -1,0 +1,167 @@
+// ================================================================================================
+// 	File Name: semi-dark-layout.scss
+// 	Description: SCSS file for semi dark layout.
+// 	----------------------------------------------------------------------------------------------
+// 	Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+// 	Author: PIXINVENT
+// 	Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+@import '../bootstrap-extended/include'; // Bootstrap includes
+@import '../components/include'; // Components includes
+
+.semi-dark-layout {
+  /************ Main Menu **************/
+
+  // main menu
+  .main-menu {
+    background-color: $theme-dark-card-bg;
+    .shadow-bottom {
+      background: linear-gradient(
+        180deg,
+        $theme-dark-card-bg 44%,
+        rgba($theme-dark-card-bg, 0.51) 73%,
+        rgba($theme-dark-card-bg, 0)
+      );
+    }
+    &:not(.expanded) {
+      .navigation {
+        .sidebar-group-active {
+          a {
+            background-color: $theme-dark-body-bg;
+          }
+        }
+      }
+    }
+  }
+
+  // main menu content
+  .main-menu-content {
+    .navigation-main {
+      background-color: $theme-dark-card-bg;
+      .navigation-header {
+        color: $theme-dark-text-muted-color;
+      }
+      .nav-item {
+        a {
+          color: $theme-dark-font-white;
+          .badge{
+            color: $theme-dark-font-white;
+          }
+        }
+        &.open {
+          a {
+            background-color: $theme-dark-body-bg;
+          }
+        }
+        a:after,
+        a {
+          color: $theme-dark-font-white;
+        }
+        .menu-content {
+          background-color: $theme-dark-card-bg;
+          .active {
+            a{
+              background: whitesmoke !important;
+              color: $theme-dark-font-black;
+              font-weight: 600;
+              .menu-item {
+                background: whitesmoke !important;
+                color: $theme-dark-font-black;
+                font-weight: 600;
+              }
+            }
+          }
+          li:not(.active) {
+            a {
+              background-color: $theme-dark-card-bg;
+            }
+          }
+        }
+      }
+      .active {
+        .mainmenu{
+          background: whitesmoke;
+          color: $theme-dark-font-black;
+          span{
+            color: $theme-dark-font-black;  
+            font-weight: 600;
+          }
+        }
+        .menu-title,
+        i {
+          color: $white;
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+      .sidebar-group-active {
+        .mainmenu{
+          color: $theme-dark-font-black !important;
+          background: whitesmoke !important;
+          span{
+             color: $theme-dark-font-black !important;
+             font-weight: 600 !important;
+          }
+          .badge{
+            color: $theme-dark-font-black !important;
+          }
+        }
+        a {
+          background: $theme-dark-card-bg !important;
+          border-radius: 4px !important;
+        }
+        .menu-content {
+          background-color: $theme-dark-card-bg;
+          .active {
+            z-index: 1;
+            a {
+              background-color: whitesmoke !important;
+              color: $theme-dark-font-black !important;
+              span{
+                color: $theme-dark-font-black !important;  
+                font-weight: 600 !important;
+              }
+            }
+          }
+        }
+      }
+
+      .first_sub_menu {
+        &.sidebar-group-active{
+          .firsttag{
+              background-color: whitesmoke !important;
+              color: $theme-dark-font-black !important;
+              span{
+                color: $theme-dark-font-black !important;  
+                font-weight: 600 !important;
+            }
+          }
+        }
+      }
+
+  // menu collapsed active item color
+  .menu-collapsed {
+    .main-menu:not(.expanded) {
+      .navigation-main {
+        li.active {
+          > a {
+            background: $theme-dark-body-bg !important;
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
+
+  //btn-outline-primary
+  .btn-outline-primary {
+        border: 1px solid $black !important;
+        background-color: transparent;
+        color: $black;
+    }
+
+
+}

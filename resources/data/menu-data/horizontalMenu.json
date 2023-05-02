@@ -1,0 +1,889 @@
+{
+  "menu": [
+    {
+      "name": "Dashboards",
+      "icon": "home",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "admin/dashboard/analytics",
+          "name": "Analytics",
+          "icon": "activity",
+          "slug": "dashboard-analytics"
+        },
+        {
+          "url": "admin/dashboard/ecommerce",
+          "name": "eCommerce",
+          "icon": "shopping-cart",
+          "slug": "dashboard-ecommerce"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "icon": "package",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "admin/app/email",
+          "name": "Email",
+          "icon": "mail",
+          "slug": "app-email"
+        },
+        {
+          "url": "admin/app/chat",
+          "name": "Chat",
+          "icon": "message-square",
+          "slug": "app-chat"
+        },
+        {
+          "url": "admin/app/todo",
+          "name": "Todo",
+          "icon": "check-square",
+          "slug": "app-todo"
+        },
+        {
+          "url": "admin/app/calendar",
+          "name": "Calendar",
+          "icon": "calendar",
+          "slug": "app-calendar"
+        },
+        {
+          "url": "admin/app/kanban",
+          "name": "Kanban",
+          "icon": "grid",
+          "slug": "app-kanban"
+        },
+        {
+          "name": "Invoice",
+          "icon": "file-text",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/app/invoice/list",
+              "name": "List",
+              "icon": "circle",
+              "slug": "app-invoice-list"
+            },
+            {
+              "url": "admin/app/invoice/preview",
+              "name": "Preview",
+              "icon": "circle",
+              "slug": "app-invoice-preview"
+            },
+            {
+              "url": "admin/app/invoice/edit",
+              "name": "Edit",
+              "icon": "circle",
+              "slug": "app-invoice-edit"
+            },
+            {
+              "url": "admin/app/invoice/add",
+              "name": "Add",
+              "icon": "circle",
+              "slug": "app-invoice-add"
+            }
+          ]
+        },
+        {
+          "url": "admin/app/file-manager",
+          "name": "File Manager",
+          "icon": "save",
+          "slug": "app-file-manager"
+        },
+        {
+          "name": "eCommerce",
+          "icon": "shopping-cart",
+          "dropdown": "1",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/app/ecommerce/shop",
+              "name": "Shop",
+              "icon": "circle",
+              "slug": "app-ecommerce-shop"
+            },
+            {
+              "url": "admin/app/ecommerce/details",
+              "name": "Details",
+              "icon": "circle",
+              "slug": "app-ecommerce-details"
+            },
+            {
+              "url": "admin/app/ecommerce/wishlist",
+              "name": "Wish List",
+              "icon": "circle",
+              "slug": "app-ecommerce-wishlist"
+            },
+            {
+              "url": "admin/app/ecommerce/checkout",
+              "name": "Checkout",
+              "icon": "circle",
+              "slug": "app-ecommerce-checkout"
+            }
+          ]
+        },
+        {
+          "name": "User",
+          "icon": "user",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/app/user/list",
+              "name": "List",
+              "icon": "circle",
+              "slug": "app-user-list"
+            },
+            {
+              "url": "admin/app/user/view",
+              "name": "View",
+              "icon": "circle",
+              "slug": "app-user-view"
+            },
+            {
+              "url": "admin/app/user/edit",
+              "name": "Edit",
+              "icon": "circle",
+              "slug": "app-user-edit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UI Elements",
+      "icon": "layers",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "admin/ui/typography",
+          "name": "Typography",
+          "icon": "type",
+          "slug": "ui-typography"
+        },
+        {
+          "url": "admin/ui/colors",
+          "name": "Colors",
+          "icon": "droplet",
+          "slug": "ui-colors"
+        },
+        {
+          "url": "admin/icons/feather",
+          "name": "Feather",
+          "icon": "eye",
+          "slug": "icons-feather"
+        },
+        {
+          "name": "Card",
+          "icon": "credit-card",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/card/basic",
+              "name": "Basic",
+              "icon": "circle",
+              "slug": "card-basic"
+            },
+            {
+              "url": "admin/card/advance",
+              "name": "Advanced",
+              "icon": "circle",
+              "slug": "card-advance"
+            },
+            {
+              "url": "admin/card/statistics",
+              "name": "Statistics",
+              "icon": "circle",
+              "slug": "card-statistics"
+            },
+            {
+              "url": "admin/card/analytics",
+              "name": "Analytics",
+              "icon": "circle",
+              "slug": "card-analytics"
+            },
+            {
+              "url": "admin/card/actions",
+              "name": "Card Actions",
+              "icon": "circle",
+              "slug": "card-actions"
+            }
+          ]
+        },
+        {
+          "name": "Components",
+          "icon": "briefcase",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/component/alert",
+              "name": "Alerts",
+              "icon": "circle",
+              "slug": "component-alert"
+            },
+            {
+              "url": "admin/component/avatar",
+              "name": "Avatar",
+              "icon": "circle",
+              "slug": "component-avatar"
+            },
+            {
+              "url": "admin/component/badges",
+              "name": "Badges",
+              "icon": "circle",
+              "slug": "component-badges"
+            },
+            {
+              "url": "admin/component/breadcrumbs",
+              "name": "Breadcrumbs",
+              "icon": "circle",
+              "slug": "component-breadcrumbs"
+            },
+            {
+              "url": "admin/component/buttons",
+              "name": "Buttons",
+              "icon": "circle",
+              "slug": "component-buttons"
+            },
+            {
+              "url": "admin/component/carousel",
+              "name": "Carousel",
+              "icon": "circle",
+              "slug": "component-carousel"
+            },
+            {
+              "url": "admin/component/collapse",
+              "name": "Collapse",
+              "icon": "circle",
+              "slug": "component-collapse"
+            },
+            {
+              "url": "admin/component/divider",
+              "name": "Divider",
+              "icon": "circle",
+              "slug": "component-divider"
+            },
+            {
+              "url": "admin/component/dropdowns",
+              "name": "Dropdowns",
+              "icon": "circle",
+              "slug": "component-dropdowns"
+            },
+            {
+              "url": "admin/component/list-group",
+              "name": "List Group",
+              "icon": "circle",
+              "slug": "component-list-group"
+            },
+            {
+              "url": "admin/component/media-objects",
+              "name": "Media Objects",
+              "icon": "circle",
+              "slug": "component-media-objects"
+            },
+            {
+              "url": "admin/component/modals",
+              "name": "Modals",
+              "icon": "circle",
+              "slug": "component-modals"
+            },
+            {
+              "url": "admin/component/navs",
+              "name": "Navs Component",
+              "icon": "circle",
+              "slug": "component-navs"
+            },
+            {
+              "url": "admin/component/pagination",
+              "name": "Pagination",
+              "icon": "circle",
+              "slug": "component-pagination"
+            },
+            {
+              "url": "admin/component/pill-badges",
+              "name": "Pill Badges",
+              "icon": "circle",
+              "slug": "component-pill-badges"
+            },
+            {
+              "url": "admin/component/pills",
+              "name": "Pills Component",
+              "icon": "circle",
+              "slug": "component-pills"
+            },
+            {
+              "url": "admin/component/popovers",
+              "name": "Popovers",
+              "icon": "circle",
+              "slug": "component-popovers"
+            },
+            {
+              "url": "admin/component/progress",
+              "name": "Progress",
+              "icon": "circle",
+              "slug": "component-progress"
+            },
+            {
+              "url": "admin/component/spinner",
+              "name": "Spinner",
+              "icon": "circle",
+              "slug": "component-spinner"
+            },
+            {
+              "url": "admin/component/tabs",
+              "name": "Tabs Component",
+              "icon": "circle",
+              "slug": "component-tabs"
+            },
+            {
+              "url": "admin/component/timeline",
+              "name": "Timeline",
+              "icon": "circle",
+              "slug": "component-timeline"
+            },
+            {
+              "url": "admin/component/toast",
+              "name": "Toasts",
+              "icon": "circle",
+              "slug": "component-toast"
+            },
+            {
+              "url": "admin/component/tooltips",
+              "name": "Tooltips",
+              "icon": "circle",
+              "slug": "component-tooltips"
+            }
+          ]
+        },
+        {
+          "name": "Extensions",
+          "icon": "box",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/ext-component/sweet-alerts",
+              "name": "Sweet Alert",
+              "icon": "circle",
+              "slug": "ext-component-sweet-alerts"
+            },
+            {
+              "url": "admin/ext-component/block-ui",
+              "name": "BlockUI",
+              "icon": "circle",
+              "slug": "ext-component-block-ui"
+            },
+            {
+              "url": "admin/ext-component/toastr",
+              "name": "Toastr",
+              "icon": "circle",
+              "slug": "ext-component-toastr"
+            },
+            {
+              "url": "admin/ext-component/slider",
+              "name": "Slider",
+              "icon": "circle",
+              "slug": "ext-component-slider"
+            },
+            {
+              "url": "admin/ext-component/drag-drop",
+              "name": "Drag & Drop",
+              "icon": "circle",
+              "slug": "ext-component-drag-drop"
+            },
+            {
+              "url": "admin/ext-component/tour",
+              "name": "Tour",
+              "icon": "circle",
+              "slug": "ext-component-tour"
+            },
+            {
+              "url": "admin/ext-component/clipboard",
+              "name": "Clipboard",
+              "icon": "circle",
+              "slug": "ext-component-clipboard"
+            },
+            {
+              "url": "admin/ext-component/plyr",
+              "name": "Media Player",
+              "icon": "circle",
+              "slug": "ext-component-plyr"
+            },
+            {
+              "url": "admin/ext-component/context-menu",
+              "name": "Context Menu",
+              "icon": "circle",
+              "slug": "ext-component-context-menu"
+            },
+            {
+              "url": "admin/ext-component/swiper",
+              "name": "Swiper",
+              "icon": "smartphone",
+              "slug": "ext-component-swiper"
+            },
+            {
+              "url": "admin/ext-component/tree",
+              "name": "Tree",
+              "icon": "circle",
+              "slug": "ext-component-tree"
+            },
+            {
+              "url": "admin/ext-component/ratings",
+              "name": "Ratings",
+              "icon": "circle",
+              "slug": "ext-component-ratings"
+            },
+            {
+              "url": "admin/ext-component/locale",
+              "name": "Locale",
+              "icon": "circle",
+              "slug": "ext-component-locale"
+            }
+          ]
+        },
+        {
+          "name": "Page Layouts",
+          "icon": "layout",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/page-layouts/boxed",
+              "name": "Layout Boxed",
+              "icon": "circle",
+              "slug": "layout-boxed"
+            },
+            {
+              "url": "admin/page-layouts/without-menu",
+              "name": "Without Menu",
+              "icon": "circle",
+              "slug": "layout-without-menu"
+            },
+            {
+              "url": "admin/page-layouts/empty",
+              "name": "Layout Empty",
+              "icon": "circle",
+              "slug": "layout-empty"
+            },
+            {
+              "url": "admin/page-layouts/blank",
+              "name": "Layout Blank",
+              "icon": "circle",
+              "slug": "layout-blank"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forms & Tables",
+      "icon": "edit",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "name": "Form Elements",
+          "icon": "copy",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/form/input",
+              "name": "Input",
+              "icon": "circle",
+              "slug": "form-input"
+            },
+            {
+              "url": "admin/form/input-groups",
+              "name": "Input Groups",
+              "icon": "circle",
+              "slug": "form-input-groups"
+            },
+            {
+              "url": "admin/form/input-mask",
+              "name": "Input Mask",
+              "icon": "circle",
+              "slug": "form-input-mask"
+            },
+            {
+              "url": "admin/form/textarea",
+              "name": "Textarea",
+              "icon": "circle",
+              "slug": "form-textarea"
+            },
+            {
+              "url": "admin/form/checkbox",
+              "name": "Checkbox",
+              "icon": "circle",
+              "slug": "form-checkbox"
+            },
+            {
+              "url": "admin/form/radio",
+              "name": "Radio",
+              "icon": "circle",
+              "slug": "form-radio"
+            },
+            {
+              "url": "admin/form/switch",
+              "name": "Switch",
+              "icon": "circle",
+              "slug": "form-switch"
+            },
+            {
+              "url": "admin/form/select",
+              "name": "Select",
+              "icon": "circle",
+              "slug": "form-select"
+            },
+            {
+              "url": "admin/form/number-input",
+              "name": "Number Input",
+              "icon": "circle",
+              "slug": "form-number-input"
+            },
+            {
+              "url": "admin/form/file-uploader",
+              "name": "File Uploader",
+              "icon": "circle",
+              "slug": "form-file-uploader"
+            },
+            {
+              "url": "admin/form/quill-editor",
+              "name": "Quill Editor",
+              "icon": "circle",
+              "slug": "form-quill-editor"
+            },
+            {
+              "url": "admin/form/date-time-picker",
+              "name": "Date & Time Picker",
+              "icon": "circle",
+              "slug": "form-date-time-picker"
+            }
+          ]
+        },
+        {
+          "url": "admin/form/layout",
+          "name": "Form Layout",
+          "icon": "box",
+          "slug": "form-layout"
+        },
+        {
+          "url": "admin/form/wizard",
+          "name": "Form Wizard",
+          "icon": "package",
+          "slug": "form-wizard"
+        },
+        {
+          "url": "admin/form/validation",
+          "name": "Form Validation",
+          "icon": "check-circle",
+          "slug": "form-validation"
+        },
+        {
+          "url": "admin/form/repeater",
+          "name": "Form Repeater",
+          "icon": "check-circle",
+          "slug": "form-repeater"
+        },
+        {
+          "url": "admin/table",
+          "name": "Table",
+          "icon": "server",
+          "slug": "table"
+        },
+        {
+          "name": "Datatable",
+          "icon": "grid",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/table/datatable/basic",
+              "name": "Basic",
+              "icon": "circle",
+              "slug": "datatable-basic"
+            },
+            {
+              "url": "admin/table/datatable/advance",
+              "name": "Advance",
+              "icon": "circle",
+              "slug": "datatable-advance"
+            }
+          ]
+        },
+        {
+          "url": "admin/table/ag-grid",
+          "name": "agGrid Table",
+          "icon": "grid",
+          "slug": "ag-grid"
+        }
+      ]
+    },
+    {
+      "name": "Pages",
+      "icon": "file-text",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "name": "Authentication",
+          "icon": "unlock",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/auth/login-v1",
+              "name": "Login v1",
+              "icon": "circle",
+              "slug": "auth-login-v1",
+              "newTab": true
+            },
+            {
+              "url": "admin/auth/login-v2",
+              "name": "Login v2",
+              "icon": "circle",
+              "slug": "auth-login-v2",
+              "newTab": true
+            },
+            {
+              "url": "admin/auth/register-v1",
+              "name": "Register v1",
+              "icon": "circle",
+              "slug": "auth-register-v1",
+              "newTab": true
+            },
+            {
+              "url": "admin/auth/register-v2",
+              "name": "Register v2",
+              "icon": "circle",
+              "slug": "auth-register-v2",
+              "newTab": true
+            },
+            {
+              "url": "admin/auth/forgot-password-v1",
+              "name": "Forgot Password v1",
+              "icon": "circle",
+              "slug": "auth-forgot-password-v1",
+              "newTab": true
+            },
+            {
+              "url": "admin/auth/forgot-password-v2",
+              "name": "Forgot Password v2",
+              "icon": "circle",
+              "slug": "auth-forgot-password-v2",
+              "newTab": true
+            },
+            {
+              "url": "admin/auth/reset-password-v1",
+              "name": "Reset Password v1",
+              "icon": "circle",
+              "slug": "auth-reset-password-v1",
+              "newTab": true
+            },
+            {
+              "url": "admin/auth/reset-password-v2",
+              "name": "Reset Password v2",
+              "icon": "circle",
+              "slug": "auth-reset-password-v2",
+              "newTab": true
+            }
+          ]
+        },
+        {
+          "url": "admin/page/account-settings",
+          "name": "Account Settings",
+          "icon": "settings",
+          "slug": "page-account-settings"
+        },
+        {
+          "url": "admin/page/profile",
+          "name": "Profile",
+          "icon": "user",
+          "slug": "page-profile"
+        },
+        {
+          "url": "admin/page/faq",
+          "name": "FAQ",
+          "icon": "help-circle",
+          "slug": "page-faq"
+        },
+        {
+          "url": "admin/page/knowledge-base",
+          "name": "Knowledge Base",
+          "icon": "info",
+          "slug": "page-knowledge-base"
+        },
+        {
+          "url": "admin/page/pricing",
+          "name": "Pricing",
+          "icon": "dollar-sign",
+          "slug": "page-pricing"
+        },
+        {
+          "name": "Blog",
+          "icon": "clipboard",
+          "slug": "",
+          "submenu": [
+            { "url": "admin/page/blog/list", "name": "List", "slug": "page-blog-list", "icon": "circle" },
+            { "url": "admin/page/blog/detail", "name": "Detail", "slug": "page-blog-detail", "icon": "circle" },
+            { "url": "admin/page/blog/edit", "name": "Edit", "slug": "page-blog-edit", "icon": "circle" }
+          ]
+        },
+        {
+          "name": "Mail Template",
+          "icon": "circle",
+          "slug": "",
+          "submenu": [
+            {
+              "name": "Welcome",
+              "slug": "mail-welcome",
+              "icon": "circle"
+            },
+            {
+              "name": "Forgot",
+              "slug": "mail-forgot",
+              "icon": "circle"
+            },
+            {
+              "name": "Verify",
+              "slug": "mail-verify",
+              "icon": "circle"
+            },
+            {
+              "name": "Deactivate",
+              "slug": "mail-deactivate",
+              "icon": "circle"
+            },
+            {
+              "name": "Order",
+              "slug": "mail-order",
+              "icon": "circle"
+            }
+          ]
+        },
+        {
+          "name": "Miscellaneous",
+          "icon": "file",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/page/coming-soon",
+              "name": "Coming Soon",
+              "icon": "circle",
+              "slug": "misc-coming-soon",
+              "newTab": true
+            },
+            {
+              "url": "admin/page/not-authorized",
+              "name": "Not Authorized",
+              "icon": "circle",
+              "slug": "misc-not-authorized",
+              "newTab": true
+            },
+            {
+              "url": "admin/page/maintenance",
+              "name": "Maintenance",
+              "icon": "circle",
+              "slug": "misc-maintenance",
+              "newTab": true
+            },
+            {
+              "url": "admin/error",
+              "name": "Error",
+              "icon": "circle",
+              "slug": "error",
+              "newTab": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Charts & Maps",
+      "icon": "bar-chart-2",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "name": "Charts",
+          "icon": "pie-chart",
+          "slug": "",
+          "submenu": [
+            {
+              "url": "admin/chart/apex",
+              "name": "Apex",
+              "icon": "circle",
+              "slug": "chart-apex"
+            },
+            {
+              "url": "admin/chart/chartjs",
+              "name": "Chartjs",
+              "icon": "circle",
+              "slug": "chart-chartjs"
+            }
+          ]
+        },
+        {
+          "url": "admin/maps/leaflet",
+          "name": "Leaflet Maps",
+          "icon": "map",
+          "slug": "map-leaflet"
+        }
+      ]
+    },
+    {
+      "name": "Misc",
+      "icon": "more-horizontal",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "name": "Menu Levels",
+          "icon": "menu",
+          "slug": "",
+          "submenu": [
+            {
+              "name": "Second Level 2.1",
+              "icon": "circle",
+              "slug": ""
+            },
+            {
+              "name": "Second Level 2.2",
+              "icon": "circle",
+              "slug": "",
+              "submenu": [
+                {
+                  "name": "Third Level 3.1",
+                  "icon": "circle",
+                  "slug": ""
+                },
+                {
+                  "name": "Third Level 3.2",
+                  "icon": "circle",
+                  "slug": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Disabled Menu",
+          "icon": "eye-off",
+          "classlist": "disabled",
+          "slug": "disabled"
+        },
+        {
+          "url": "https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation/documentation-laravel-folder-structure.html",
+          "name": "Documentation",
+          "icon": "folder",
+          "slug": "documentation",
+          "newTab": true
+        },
+        {
+          "url": "https://pixinvent.ticksy.com/",
+          "name": "Raise Support",
+          "icon": "life-buoy",
+          "slug": "raise-support",
+          "newTab": true
+        }
+      ]
+    }
+  ]
+}
