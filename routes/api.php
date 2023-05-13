@@ -354,8 +354,3 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1','middlew
 		Route::post('shippingapprove',['as'=> 'shippingapprove', 'uses' => 'ApproveShippingApiController@getShippingAdminApprove']);
 		Route::post('returnshippingapprove',['as'=> 'returnshippingapprove', 'uses' => 'ApproveReturnShippingApiController@getReturnShippingAdminApprove']);
 });
-
-
-
-
-

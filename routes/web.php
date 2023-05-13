@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-require_once 'front.php';
+require __DIR__.'/front.php';
 
 Route::redirect('/admin', '/admin/login');
 
@@ -634,6 +633,7 @@ Route::get('setLanguage', function () {
 
         return $frontstrings;
     });
+  //  echo public_path("js/frontlang.js");
    $frontmyfile = fopen(public_path("js/frontlang.js"), "w") or die("Unable to open file!");
    $fronttxt = 'window.i18n = ' . json_encode($frontstrings);
    fwrite($frontmyfile, $fronttxt);
