@@ -633,7 +633,7 @@ Route::get('setLanguage', function () {
 
         return $frontstrings;
     });
-  //  echo public_path("js/frontlang.js");
+    echo public_path("js/frontlang.js");
    $frontmyfile = fopen(public_path("js/frontlang.js"), "w") or die("Unable to open file!");
    $fronttxt = 'window.i18n = ' . json_encode($frontstrings);
    fwrite($frontmyfile, $fronttxt);

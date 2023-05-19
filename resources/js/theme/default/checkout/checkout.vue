@@ -402,7 +402,7 @@
                         </div>
                      </div>
                   </div>
-                  <!-- <div class="tab-pane fade" id="step3">
+                   <div class="tab-pane fade" id="step3">
                      <div class="tab-pane-inside">
                         <div class="clearfix">
                            <input id="formcheckoutRadio1" value="" name="radio1" type="radio" class="radio" checked="checked">
@@ -453,6 +453,21 @@
                             <input type="hidden" name="returnUrl" v-model="cashfreeForm.returnUrl"/>
                             <input type="hidden" name="notifyUrl" v-model="cashfreeForm.notifyUrl"/>
                             <input type="hidden" name="signature" v-model="cashfreeForm.signature"/>
+                        </form>
+
+                        <!-- cash on delivery -->
+                        <form id="cod" method="post" :action="data.cdourl" ref="codForm" style="visibility: hidden;">
+                            <input type="hidden" name="appId" v-model="codForm.appId"/>
+                            <input type="hidden" name="orderId" v-model="codForm.orderId" />
+                            <input type="hidden" name="orderAmount" v-model="codForm.orderAmount"/>
+                            <input type="hidden" name="orderCurrency" v-model="codForm.orderCurrency"/>
+                            <input type="hidden" name="orderNote" v-model="codForm.orderNote"/>
+                            <input type="hidden" name="customerName" v-model="codForm.customerName"/>
+                            <input type="hidden" name="customerEmail" v-model="codForm.customerEmail"/>
+                            <input type="hidden" name="customerPhone" v-model="codForm.customerPhone"/>
+                            <input type="hidden" name="returnUrl" v-model="codForm.returnUrl"/>
+                            <input type="hidden" name="notifyUrl" v-model="codForm.notifyUrl"/>
+                            <input type="hidden" name="signature" v-model="codForm.signature"/>
                         </form>
 
                         <!-- paytm form -->
